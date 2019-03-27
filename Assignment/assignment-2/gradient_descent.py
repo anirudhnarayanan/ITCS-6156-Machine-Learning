@@ -23,7 +23,7 @@ class GradientDescent:
         return self.hypothesis(i) - float(self.y[i])
 
     
-    def stochastic_gradient_descent(self,alpha):
+    def stochastic_gradient_descent(self,alpha): #LMS
         for i in range(self.data_size):
             error = self.cost_function(i)
             print error
